@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <MediaView fx:id="spec" blendMode="SCREEN" fitHeight="300.0" fitWidth="600.0" preserveRatio="false" />
+      <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="271.0" layoutY="339.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/play.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="311.0" layoutY="336.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/pause%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="217.0" layoutY="336.0" onMouseClicked="#backward" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/previous.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="35.0" layoutX="363.0" layoutY="336.0" onMouseClicked="#forward" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/next-button.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="vol" layoutX="466.0" layoutY="346.0" onMouseDragged="#volume" prefHeight="14.0" prefWidth="111.0" value="50.0" />
+      <ProgressBar fx:id="bar" layoutX="14.0" layoutY="303.0" prefHeight="18.0" prefWidth="571.0" progress="0.0" />
+      <Label prefHeight="38.0" prefWidth="48.0" />
+      <ImageView fitHeight="37.0" fitWidth="41.0" onMouseClicked="#menu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/ui.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="songName" layoutX="37.0" layoutY="4.0" prefHeight="30.0" prefWidth="303.0" text="No Music Selected" textFill="#a9a9a9">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="437.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../musicPlayer/sound%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
