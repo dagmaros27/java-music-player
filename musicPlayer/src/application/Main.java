@@ -24,7 +24,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("DPlayer");
-			Image image = new Image("C:\\Users\\dagiM\\eclipse-workspace\\musicPlayer\\musicPlayer\\music.png");
+			Image image = new Image("\\musicPlayer\\musicPlayer\\music.png");
 			primaryStage.getIcons().add(image);
 			primaryStage.show();
 			
