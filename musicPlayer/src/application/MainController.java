@@ -52,7 +52,7 @@ public class MainController implements Initializable  {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		file2 = new File("C:\\Users\\dagiM\\eclipse-workspace\\musicPlayer\\musicPlayer\\spec.mp4"); 
+		file2 = new File("\\musicPlayer\\musicPlayer\\spec.mp4"); 
 		video = new Media(file2.toURI().toString());
 		mp2 = new MediaPlayer(video);
 		spec.setMediaPlayer(mp2);
